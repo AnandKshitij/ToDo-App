@@ -9,6 +9,7 @@ export class LoginComponent implements OnInit {
 
   username: string = '';
   password = '';
+  invalid = false;
 
   constructor() { }
 
@@ -18,6 +19,12 @@ export class LoginComponent implements OnInit {
   loginClicked(){
     console.log(this.username);
     console.log(this.password);
+    if(this.username==='kshitij' && this.password==='kshitij0512'){
+      this.invalid = false;
+    }
+    else{
+      this.invalid = true;
+    }
   }
 
 }
