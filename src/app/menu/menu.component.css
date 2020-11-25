@@ -1,0 +1,13 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color: black;
+}

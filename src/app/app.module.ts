@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
 import { ListTodosComponent } from './list-todos/list-todos.component';
+import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,8 @@ import { ListTodosComponent } from './list-todos/list-todos.component';
     LoginComponent,
     ErrorComponent,
     ListTodosComponent,
+    MenuComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +37,8 @@ import { ListTodosComponent } from './list-todos/list-todos.component';
     MatInputModule,
     MatFormFieldModule,
     MatTableModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

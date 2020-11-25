@@ -1,3 +1,6 @@
+<span>Tasks To Do:</span>
+<br>
+<br>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <ng-container matColumnDef="id">
     <th mat-header-cell *matHeaderCellDef>Id</th>
@@ -16,7 +19,7 @@
 
   <ng-container matColumnDef="targetDate">
     <th mat-header-cell *matHeaderCellDef>Target Date</th>
-    <td mat-cell *matCellDef="let element">{{ element.targetDate }}</td>
+    <td mat-cell *matCellDef="let element">{{ element.targetDate | date | uppercase}}</td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
