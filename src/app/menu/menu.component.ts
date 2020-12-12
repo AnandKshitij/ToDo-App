@@ -15,12 +15,12 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.hardcodedAuthentication.loggedIn.subscribe(
       (username) => {
-        this.userLogged = true;
+        this.userLogged = this.hardcodedAuthentication.isUserLoggedIn();
       }
     );
     this.hardcodedAuthentication.loggedOut.subscribe(
       () => {
-        this.userLogged = false;
+        this.userLogged = this.hardcodedAuthentication.isUserLoggedIn();
       }
     );
   }
